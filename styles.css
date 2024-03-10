@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-one: white;
+    --color-two: rgb(46, 45, 45);
+    --color-three: brown;
+}
+
+::selection {
+    background-color: var(--color-three);
+    color: var(--color-one);
+}
+
+body {
+    margin: auto;
+    width: 100%;
+    font-size: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+    min-width: 300px;
+    max-width: 1400px;
+}
+
+.title {
+    color: var(--color-two);
+    text-transform: uppercase;
+    font-size: 4.5rem;
+}
+
+#title {
+    color: var(--color-three);
+}
+
+#main {
+    width: 100%;
+}
+
+.flexbox {
+    padding: 19em 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.items {
+    padding: 2em;
+    width: 50%;
+}
+
+.items a {
+    margin: .8em 0;
+    border-radius: 7px;
+    padding: .5em;
+    width: 50%;
+    min-width: 150px;
+    display: block;
+    background-color: var(--color-three);
+    color: var(--color-one);
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.items a:hover {
+    opacity: .9;
+}
+
+#image {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    color: var(--color-two);
+    text-align: center;
+}
+
+#img-caption {
+    margin: .3em;
+    color: var(--color-two);
+    font-size: 1rem;
+    font-style: italic;
+}
+
+#tribute-info {
+    width: 100%;
+    padding: 1em;
+    font-size: 1.8rem;
+}
+
+#tribute-info p {
+    margin: 1em 0;
+    line-height: 30px;
+}
+
+#tribute-link {
+    color: var(--color-three);
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1500px) {
+    .title {
+        font-size: 3rem;
+    }
+
+    .flexbox {
+        padding: 15em 0;
+    }
+
+    .items a {
+        font-size: 1rem;
+    }
+
+    #tribute-info {
+        padding: .9em;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .title {
+        font-size: 3.5rem;
+    }
+
+    .flexbox {
+        padding: 8em 0;
+        flex-direction: column;
+    }
+
+    .items {
+        width: 100%;
+    }
+
+}
